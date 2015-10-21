@@ -1,0 +1,1 @@
+function loginControllerFunction(o,n){o.logAuth=function(){n.info("user login",o.user.login),n.info("user password")}}angular.module("loginApp").controller("loginController",["$scope","$log",loginControllerFunction]);
