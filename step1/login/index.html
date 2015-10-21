@@ -1,4 +1,4 @@
-<html lang="en" ng-app="loginApp" ng-controller="loginController">
+<html lang="en" ng-app="loginApp" ng-controller="loginCtrl">
 
 <head>
   <title>Watcher Login</title>
@@ -35,7 +35,7 @@
                   <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="user.pwd">
                 </div>
 
-                <button type="button" class="btn" ngclick="logAuth()">Lets go!</button>
+                <button type="button" class="btn" ng-click="logAuth()">Lets go!</button>
               </form>
 
             </div>
