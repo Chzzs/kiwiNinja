@@ -1,0 +1,31 @@
+body{
+	background-image: url("../../res/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.panel{
+	margin-top: 10%;
+	background: #ecf0f1;
+	border-radius: 3px;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+	padding-left: 0px;
+	margin-left:0px;
+}
+
+.form-top{
+	min-height: 100px;
+}
+
+.form-bottom{
+	margin-left:0px;
+	padding-left:0px;
+	/*background: #bdc3c7;*/
+}
+
+.btn{
+	width: 100%;
+	background: #27ae60;
+	color: white;
+	margin-top: 5px;
+}

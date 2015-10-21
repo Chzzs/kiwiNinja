@@ -3,6 +3,7 @@
 <head>
   <title>Watcher Login</title>
   <!-- CSS -->
+  <link rel="stylesheet" href="lib/css/style.css">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
 </head>
 
@@ -11,9 +12,9 @@
   <div class="top-content">
     <div class="inner-bg">
       <div class="container">
-
+        
         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 form-box">
+          <div class="col-sm-6 col-sm-offset-3 form-box panel">
             <div class="form-top">
               <div class="form-top-left">
                 <h3>Login to our site</h3>
@@ -35,8 +36,12 @@
                   <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="user.pwd">
                 </div>
 
-                <button type="button" class="btn" ng-click="logAuth()">Lets go!</button>
+                <button type="button" class="btn" ng-click="checkUser(user)">Lets go!</button>
+                <button type="button" class="btn" ng-click="showUserList(user)">Show user list</button>
               </form>
+              
+              <p>login: {{user.login}}</p>
+              <p>pwd: {{user.pwd}}</p>
 
             </div>
           </div>
@@ -52,6 +57,7 @@
   <!-- App -->
   <script src="js/application/LoginApp.js"></script>
   <script src="js/controllers/LoginController.js"></script>
+  <script src="js/services/AuthService.js"></script>
 </body>
 
 </html>
