@@ -1,2 +1,2 @@
 
-angular.module('loginApp', []);
+angular.module('loginApp', ['authService']);
