@@ -1,1 +1,6 @@
-typings/angularjs/angular.d.ts
+.DS_Store
+.idea
+target
+out
+kiwiNinja.iml
+lib
